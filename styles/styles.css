@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
+* {
+  font-size: 10px;
+  box-sizing: border-box;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  scroll-behavior: smooth
+}
+
+.nav{
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  text-align: center;
+}
+
+.nav_logo{
+  margin: 0 20rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 2.7rem;
+  
+}
+
+.logo_up{
+  font-weight: 400 ;
+  font-size: 2.5rem;
+}
+.logo_down{
+  font-weight: 200 ;
+  font-size: 2rem;
+}
+
+.nav_links_list{
+  display: flex;
+
+}
+.nav_links_list_links{
+  list-style-type: none;
+  padding: 0 3rem;
+  font-size: 1.5rem;
+}
+
+
