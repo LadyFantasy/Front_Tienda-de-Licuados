@@ -21,28 +21,37 @@
   margin: 0 20rem;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  line-height: 2.7rem;
+  /* text-align: center; */
+  line-height: 2.2rem;
+  padding: .5rem;
   
 }
 
 .logo_up{
   font-weight: 400 ;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
 }
 .logo_down{
   font-weight: 200 ;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .nav_links_list{
   display: flex;
-
+  align-items: center;
+  letter-spacing: .1rem;
+  
 }
+
+a .nav_links_list_links{
+  padding: 0 .5rem;
+}
+
 .nav_links_list_links{
   list-style-type: none;
-  padding: 0 3rem;
-  font-size: 1.5rem;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 
