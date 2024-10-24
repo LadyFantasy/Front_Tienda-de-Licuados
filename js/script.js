@@ -1,4 +1,6 @@
-// Detectar el scroll y aplicar la clase 'scrolled' al navbar
+
+
+// SCROLL DEL NAVBAR
 /* window.addEventListener('scroll', function() {
   var navbar = document.getElementById('navbar');
   if (window.scrollY > 50) { // Si el scroll es mayor a 50px
@@ -8,4 +10,4 @@
   }
 }); */
 
-/* Carrousel */
+/* SLIDER HERO */

@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Tienda de Licuados</title>
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
   </head>
   <body>
+
+    <!----------------------------------- NAVBAR ------------------------------------->
     <nav class="nav">
-      <span class="nav_logo"
-        ><span class="logo_up">TIENDA</span><span class="logo_down">DE LICUADOS</span></span
-      >
+      <div class="nav_logo"
+        ><span class="logo_up">TIENDA</span><span class="logo_down">DE LICUADOS</span></div>
       <ul class="nav_links_list">
         <a href="" class="nav_links_list_links"
           ><li class="nav_links_list_links">NUESTROS LICUADOS</li></a
@@ -28,9 +33,28 @@
         <a href="" class="nav_links_list_links"><li class="nav_links_list_links">CONTACTO</li></a>
       </ul>
     </nav>
+
+
+     <!----------------------------------- HERO -------------------------------------->
+    <div class="hero">
+      <!------------------ TODO CARROUSEL DE FOTOS -------------------->
+      <div class="hero_carrousel">
+<div class="hero_carrousel_img1">
+
+</div>
+<div class="hero_carrousel_img2"></div>
+<div class="hero_carrousel_img3"></div>
+
+      </div>
+
+    </div>
+
+
+     <!---------------------------------- FOOTER ------------------------------------->
     <footer>
       <div class="footer">
         <div class="footer_logo"><span class="nav_logo"><span class="logo_up">TIENDA</span><span class="logo_down">DE LICUADOS</span></span></div>
+
         <div class="footer_links_list">
           <h2 class="footer_h2">CONTENIDOS</h2>
           <ul class="footer_ul">
@@ -39,6 +63,7 @@
             <a href="" class="footer_links_list_links"><li class="footer_links_list_links">Nuestro menú</li></a>
           </ul>
         </div>
+
         <div class="footer_links_list">
           <h2 class="footer_h2">NECESITÁS AYUDA</h2>
           <ul>
@@ -48,10 +73,12 @@
             <a href="" class="footer_links_list_links"><li class="footer_links_list_links">Contacto</li></a>
           </ul>
         </div>
+
         <div class="footer_contact">
           <div class="footer_form">
             <h2 class="footer_h2">SUSCRIBITE A NUESTRO NEWSLETTER</h2>
-            <input class="field"type="email" name="email" required>
+            <input class="field"type="email" name="email" 
+           placeholder="Tu email" required>
             <button class="footer_btn" type="submit"> SUSCRIBIRME </button>
           </div>
           <div class="footer_social">
@@ -60,16 +87,13 @@
             <a href="https://www.instagram.com/tiendadecafear/" target="_blank"><i class="fab fa-instagram"></i>
           </div>
         </div>
+
       </div>
-      <div>© Copyright 2021 Tienda de café - Todos los derechos reservados.
+      <div class="footer_end">© Copyright 2021 Tienda de café - Todos los derechos reservados.
         Todos los logos, productos, marcas y nombres aqui utilizados son propiedad registrada.</div>
     </footer>
 
-    <div class="hero">
-      <!------------------ TODO CARROUSEL DE FOTOS -------------------->
-
-      <div class="hero_carrousel"></div>
-    </div>
+    
 
     <script src="./js/script.js"></script>
   </body>
