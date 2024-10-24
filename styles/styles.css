@@ -123,6 +123,7 @@ a>.nav_links_list_links {
 .footer {
   background-color: rgb(0, 0, 0);
   display: flex;
+  justify-content: space-around;
   height:70vh;
   padding-top: 7vh;
 
@@ -159,12 +160,12 @@ a>.nav_links_list_links {
 }
 
 .footer_form input{
-  background-color: grey;
+  background-color: transparent;
 
 }
 
-footer_form input::placeholder{
-  color: white;
+.footer_form input::placeholder{
+  color: grey;
 }
 .footer_h2 {
   color: #c7a17a;
