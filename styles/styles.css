@@ -139,13 +139,18 @@
 
 /* HERO */
 
-.hero_carrousel {
+.hero {
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
-.hero_carrousel:hover .arrows {
-  /*   transform: translate(50rem,50rem); */
+.hero:hover .prev{
+  transform: translateX(2vw);
+}
+
+.hero:hover .next {
+  transform: translateX(-2vw);
+
 }
 
 .hero_carrousel_img {
@@ -169,22 +174,22 @@
   position: absolute;
   display: inline-block;
   z-index: 9997;
-  top: 40%;
+  top: 50%;
   cursor: pointer;
-  /*   transition: transform 0.5s ease; */
 }
 
 .arrows .prev {
   position: absolute;
-  left: 1vw;
+  left: -1vw;
   font-size: 3rem;
-  /*   transform: translateX(-50rem,50rem); */
+  transition: transform 0.5s ease;
 }
 
 .arrows .next {
   position: absolute;
-  left: 97vw;
+  right: -100vw;
   font-size: 3rem;
+  transition: transform 0.5s ease;
 }
 
 .slide {
