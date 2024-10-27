@@ -134,6 +134,11 @@
 
 .nav_links_list_links a {
   font-size: 1.3rem;
+  transition: opacity .3s ease;
+}
+
+.nav_links_list_links a:hover {
+  opacity: .8;
 }
 
 
@@ -144,7 +149,7 @@
   overflow: hidden;
 }
 
-.hero:hover .prev{
+.hero:hover .prev {
   transform: translateX(12vw);
 }
 
@@ -177,6 +182,8 @@
   z-index: 9997;
   top: 50%;
   cursor: pointer;
+  font-family: oswald;
+  font-weight: lighter;
 }
 
 .arrows .prev {
@@ -184,31 +191,32 @@
   left: -11vw;
   font-size: 3rem;
   line-height: 5rem;
-  transition: transform 0.5s ease, color .4s ease;
+  transition: transform 0.5s ease, color .3s ease-in-out;
 }
 
 .arrows .next {
   position: absolute;
   right: -110vw;
   font-size: 3rem;
-  transition: transform 0.5s ease, color .4s ease;
+  transition: transform 0.5s ease, color .3s ease-in-out;
 }
 
-.prev:hover, .next:hover{
+.prev:hover,
+.next:hover {
   color: rgba(255, 255, 255, 0.719);
 }
 
-
-
-
-.points{
+.points {
   display: flex;
   justify-content: center;
   position: relative;
+}
+
+.hero .points{
   top: -2.5rem;
 }
 
-.point{
+.point {
   appearance: none;
   background-color: transparent;
   font: inherit;
@@ -217,17 +225,16 @@
   height: 1rem;
   border: 0.2em solid rgb(190, 190, 190);
   border-radius: 50%;
-/* background-color: grey;*/
   margin: 0 .5rem;
   cursor: pointer;
-  transition: border .3s ease, backgroundcolor .3s ease;
+  transition: border .3s ease, background-color .3s ease;
 }
 
-.point:hover{
+.point:hover {
   border: 0.2em solid rgb(255, 255, 255);
 }
 
-.point:checked{
+.point:checked {
   background-color: rgb(255, 255, 255);
   border: 0.2em solid rgb(255, 255, 255);
 }
@@ -296,8 +303,13 @@ footer {
   padding: 9px 0;
 }
 
-.footer_links_list_links a{
+.footer_links_list_links a {
   color: rgb(145, 145, 145);
+  transition: color .4s ease;
+}
+
+.footer_links_list_links a:hover {
+  color: rgb(255, 255, 255);
 }
 
 .footer_contact {
@@ -340,12 +352,16 @@ footer {
   font-weight: 600;
   border: solid 1px var(--main-text-color);
   font-size: 1.1rem;
- /*  letter-spacing: .1rem; */
+  /*  letter-spacing: .1rem; */
   cursor: pointer;
   line-height: 1.8rem;
   text-transform: uppercase;
   padding: 1.2rem 2rem;
+  transition: opacity .3s ease;
+}
 
+.footer_btn:hover {
+  opacity: 0.9;
 }
 
 .footer_form_wrapper {
@@ -362,6 +378,7 @@ footer {
   background-color: grey;
   font-size: 1.4rem;
   margin: 0.4rem;
+  transition: background-color .3s ease;
 }
 
 .footer_social .fab:hover,
