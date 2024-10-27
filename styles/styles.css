@@ -156,6 +156,7 @@
 .hero_carrousel_img {
   min-height: 70vh;
   background-position: center;
+
 }
 
 .img1 {
@@ -182,28 +183,58 @@
   position: absolute;
   left: -11vw;
   font-size: 3rem;
-  transition: transform 0.5s ease;
+  line-height: 5rem;
+  transition: transform 0.5s ease, color .4s ease;
 }
 
 .arrows .next {
   position: absolute;
   right: -110vw;
   font-size: 3rem;
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, color .4s ease;
 }
+
+.prev:hover, .next:hover{
+  color: rgba(255, 255, 255, 0.719);
+}
+
+
+
 
 .points{
   display: flex;
   justify-content: center;
+  position: relative;
+  top: -2.5rem;
 }
 
 .point{
-  margin: 2rem;
+  appearance: none;
+  background-color: transparent;
+  font: inherit;
+  color: grey;
+  width: 1rem;
+  height: 1rem;
+  border: 0.2em solid rgb(190, 190, 190);
+  border-radius: 50%;
+/* background-color: grey;*/
+  margin: 0 .5rem;
+  cursor: pointer;
+  transition: border .3s ease, backgroundcolor .3s ease;
+}
+
+.point:hover{
+  border: 0.2em solid rgb(255, 255, 255);
+}
+
+.point:checked{
+  background-color: rgb(255, 255, 255);
+  border: 0.2em solid rgb(255, 255, 255);
 }
 
 .slide {
   display: none;
-  transition: opacity 0.5s ease-in-out;
+  /* transition: opacity 0.5s ease-in-out; */
 }
 
 .slide.active {
