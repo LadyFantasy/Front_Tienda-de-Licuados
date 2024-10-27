@@ -14,6 +14,8 @@
 const slides = document.querySelectorAll('.slide');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
+const points = document.querySelectorAll(".point");
+
 let currentIndex = 0;
 
 
@@ -21,6 +23,7 @@ const showSlide = (index) => {
   slides[currentIndex].classList.remove('active');
   slides[index].classList.add('active');
   currentIndex = index;
+  points[index].checked=true;
 };
 
 next.addEventListener('click', () => {
@@ -30,8 +33,18 @@ next.addEventListener('click', () => {
 
 prev.addEventListener('click', () => {
   const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+  console.log("indice")
   showSlide(prevIndex);
 });
+
+
+
+points.forEach((point,index) => {
+  point.addEventListener('click', () => {
+  showSlide(index)
+})
+});
+
 
 // Mostrar la primera imagen al cargar la página
 showSlide(currentIndex);
