@@ -14,81 +14,37 @@
 
 
 * {
+  padding: 0;
   box-sizing: border-box;
   margin: 0;
   color: white;
   text-decoration: none;
   scroll-behavior: smooth
+  
 }
 
-/* 
-///////////////Scroll en nav /////////////////////
-#navbar {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: transparent;
-  transition: background-color 0.3s ease, padding 0.3s ease;
-  padding: 20px 50px;
-  box-shadow: none;
-  z-index: 1000;
+.line{
+  background-color: black;
+  height: 4rem;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+
+
+.scrolled{
+  background-color: black;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #f5a623;
-}
-
-/* Cambia el estilo del navbar cuando se hace scroll */
-/* .scrolled {
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 10px 50px;
-}
-
-.scrolled .nav-links a {
-  color: #333;
-}
-
-.scrolled .nav-links a:hover {
-  color: #f5a623;
-}
-
-.scrolled .logo {
-  color: #333;
- */
-
-/* ////////////////////////////////////////////////////////// */
 
 .nav {
   font-family: Oswald, Arial, Helvetica, sans-serif;
-  background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-around;
   text-align: center;
   margin: 0 auto;
   text-wrap: nowrap;
-  width: 100vw;
-  position: fixed;
+  /* width: 100vw; */
+  position: sticky;
   top: 0;
   z-index: 9999;
   padding: .6rem 0;
@@ -151,6 +107,8 @@
 
 
 .hero_carrousel_img {
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 70vh;
   background-position: center;
 }
@@ -179,7 +137,7 @@
 
 .slide.active {
   display: block;
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
 }
 
 .arrows {
@@ -188,6 +146,7 @@
   z-index: 9997;
   top: 50%;
   cursor: pointer;
+  width: 100%;
 }
 
 .arrows .prev {
@@ -200,7 +159,7 @@
 
 .arrows .next {
   position: absolute;
-  right: -110vw;
+  right: -11vw;
   font-size: 3rem;
   transition: transform .8s ease, color .3s ease-in-out;
 }
@@ -410,4 +369,117 @@ footer {
   width: 50rem;
   font-size: 1rem;
   line-height: 1.4rem;
+}
+
+
+
+
+
+
+/* /////////////////// CARRUSEL PRODUCTOS//////////////// */
+
+.prod_carrousel{
+  width: 80%;
+  /* height: 10rem; */
+  /* background-color: #c7a17a; */
+  margin: 0 auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.slider_product{
+  width: 200%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  overflow-x: hidden;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-direction:normal;
+  animation-fill-mode: forwards;
+  
+}
+
+.move_right{
+  animation-name: desplazaDerecha;
+}
+.move_left{
+  animation-name: desplazaIzquierda;
+}
+
+.product_img{
+  width: 10rem;
+  object-fit: cover;
+  height: 200px;
+  background-color: #0f27ff57;
+  border:#111111 solid 1px;
+}
+
+
+.prod_img1{
+  background-image: url("../images/fruit-juice-2443495_1920.jpg")
+  
+}
+.prod_img2{
+  background-image: url("")
+}
+.prod_img3{
+  height: 200px;
+  background-color: #c7a17a;
+  background-image: url("")
+  
+}
+.prod_img4{
+  background-image: url("")
+}
+.prod_img5{
+  background-image: url("")
+}
+.prod_img6{
+  background-image: url("")
+}
+.prod_img7{
+  background-image: url("")
+}
+.prod_img8{
+  background-image: url("")
+}
+.prod_img9{
+  background-image: url("")
+}
+.prod_img10{
+  background-image: url("")
+}
+
+
+.prod_carrousel:hover .next{
+  transform: translateX(-12vw);
+  color: black;
+}
+
+.prod_carrousel:hover .prev{
+  transform: translateX(12vw);
+  color: black;
+}
+
+
+@keyframes desplazaDerecha {
+  from{
+    transform: translateX(0%);
+  }
+  to{
+    
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes desplazaIzquierda {
+  from{
+    transform: translateX(-50%);
+  }
+  to{
+    
+    transform: translateX(0%);
+  }
 }
