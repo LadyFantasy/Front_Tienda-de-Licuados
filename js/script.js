@@ -18,9 +18,15 @@ let currentIndex = 0;
 
 const showSlide = index => {
   slides[currentIndex].classList.remove("active");
+  slides[currentIndex].classList.add("deactivate");
+  setTimeout(()=>{
+  slides[currentIndex].classList.remove("deactivate");
   slides[index].classList.add("active");
+
+
   currentIndex = index;
   points[index].checked = true;
+  console.log("Termina");},150)
 };
 
 next.addEventListener("click", () => {
@@ -30,7 +36,6 @@ next.addEventListener("click", () => {
 
 prev.addEventListener("click", () => {
   const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
-  console.log("indice");
   showSlide(prevIndex);
 });
 
