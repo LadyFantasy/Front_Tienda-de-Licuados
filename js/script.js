@@ -1,11 +1,12 @@
 // SCROLL DEL NAVBAR
-window.addEventListener('scroll', function() {
-  var navbar = document.querySelector('nav');
-  if (window.scrollY > 150) { // Si el scroll es mayor a 150px
-    console.log(window.scrollY)
-    navbar.classList.add('scrolled');
+window.addEventListener("scroll", function () {
+  var navbar = document.querySelector("nav");
+  if (window.scrollY > 150) {
+    // Si el scroll es mayor a 150px
+    console.log(window.scrollY);
+    navbar.classList.add("scrolled");
   } else {
-    navbar.classList.remove('scrolled');
+    navbar.classList.remove("scrolled");
   }
 });
 
@@ -13,21 +14,22 @@ window.addEventListener('scroll', function() {
 const slides = document.querySelectorAll(".slide");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
-const points = document.querySelectorAll(".point");
+const hero = document.querySelector(".hero");
+const points = hero.querySelectorAll(".point");
 
 let currentIndex = 0;
 
 const showSlide = index => {
   slides[currentIndex].classList.remove("active");
   slides[currentIndex].classList.add("deactivate");
-  setTimeout(()=>{
-  slides[currentIndex].classList.remove("deactivate");
-  slides[index].classList.add("active");
+  setTimeout(() => {
+    slides[currentIndex].classList.remove("deactivate");
+    slides[index].classList.add("active");
 
-
-  currentIndex = index;
-  points[index].checked = true;
-  console.log("Termina");},150)
+    currentIndex = index;
+    points[index].checked = true;
+    console.log("Termina");
+  }, 100);
 };
 
 next.addEventListener("click", () => {

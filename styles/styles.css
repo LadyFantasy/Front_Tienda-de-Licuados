@@ -33,6 +33,7 @@
 
 .scrolled{
   background-color: black;
+  padding: .6rem 0;
 }
 
 
@@ -47,7 +48,8 @@
   position: sticky;
   top: 0;
   z-index: 9999;
-  padding: .6rem 0;
+  /* padding: .2rem 0; */
+  transition: background-color .2s ease-in-out;
 }
 
 .nav_logo {
@@ -103,13 +105,14 @@
 .hero {
   position: relative;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 
 .hero_carrousel_img {
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 70vh;
+  min-height: 82vh;
   background-position: center;
 }
 
@@ -132,12 +135,10 @@
 .deactivate{
   opacity: .5;
   display: block;
-  margin-top: 10rem;
 }
 
 .slide.active {
   display: block;
-  /* margin-top: 10rem; */
 }
 
 .arrows {
@@ -154,14 +155,14 @@
   left: -11vw;
   font-size: 3rem;
   line-height: 5rem;
-  transition: transform .8s ease, color .3s ease-in-out;
+  transition: transform .5s ease, color .3s ease-in-out;
 }
 
 .arrows .next {
   position: absolute;
   right: -11vw;
   font-size: 3rem;
-  transition: transform .8s ease, color .3s ease-in-out;
+  transition: transform .5s ease, color .3s ease-in-out;
 }
 
 .prev:hover,
@@ -191,10 +192,10 @@
   appearance: none;
   background-color: transparent;
   font: inherit;
-  color: grey;
+  /* color: grey; */
   width: 1rem;
   height: 1rem;
-  border: 0.1em solid rgb(190, 190, 190);
+  border: 0.2em solid rgba(255, 255, 255, 0.384);
   border-radius: 50%;
   margin: 0 .5rem;
   cursor: pointer;
@@ -202,17 +203,17 @@
 }
 
 .point:hover {
-  border: 0.1em solid rgb(255, 255, 255);
+  border: 0.2em solid rgb(255, 255, 255);
 }
 
 .point:checked {
   background-color: rgb(255, 255, 255);
-  border: 0.1em solid rgb(255, 255, 255);
+  border: 0.2em solid rgb(255, 255, 255);
 }
 
 
 
-/* FOOTER */
+/* ------------------------- FOOTER --------------------------------*/
 
 footer {
   background-color: var(--nav-footer-background);
@@ -372,26 +373,49 @@ footer {
 }
 
 
+/* ------------------------- MAIN --------------------------------*/
 
+.carrousel_title{
+  margin: 9rem 0 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.carrousel_title_text{
+  font-size: 3.6rem;
+  line-height: 4rem;
+  color: rgb(37, 37, 37);
+  font-family: Oswald;
+  font-weight: 700;
+}
+
+.carrousel_title_line{
+ margin-top: 3rem;
+  width: 12rem;
+  height: .2rem;
+  background-color: var(--main-text-color);
+}
 
 
 /* /////////////////// CARRUSEL PRODUCTOS//////////////// */
 
 .prod_carrousel{
   width: 80%;
-  /* height: 10rem; */
-  /* background-color: #c7a17a; */
   margin: 0 auto;
   overflow-x: hidden;
   position: relative;
+  transition: transform .3s ease-in-out;
 }
 
 .slider_product{
   width: 200%;
+  gap: 1rem;
   display: flex;
+  flex-direction: row;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
   overflow-x: hidden;
   animation-duration: 2s;
@@ -402,54 +426,47 @@ footer {
 }
 
 .move_right{
-  animation-name: desplazaDerecha;
+  animation-name: Move-Right;
 }
 .move_left{
-  animation-name: desplazaIzquierda;
+  animation-name: Move-Left;
 }
 
 .product_img{
-  width: 10rem;
-  object-fit: cover;
-  height: 200px;
-  background-color: #0f27ff57;
-  border:#111111 solid 1px;
+  width: 28rem; 
+  height: 28rem; 
+  position: relative; 
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
+.product_img img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
 
-.prod_img1{
-  background-image: url("../images/fruit-juice-2443495_1920.jpg")
-  
+.product_img p {
+  text-align: center; 
+  margin-top: .5rem; 
+  color: black;
+  font-family: Oswald;
+  font-size: 1.4rem;
 }
-.prod_img2{
-  background-image: url("")
+
+.prod_carrousel .point {
+  margin: 3rem .5rem;
+  border: 0.2em solid rgb(143, 143, 143);
 }
-.prod_img3{
-  height: 200px;
-  background-color: #c7a17a;
-  background-image: url("")
-  
+
+.prod_carrousel .point:hover {
+  border: 0.2em solid rgb(0, 0, 0);
 }
-.prod_img4{
-  background-image: url("")
-}
-.prod_img5{
-  background-image: url("")
-}
-.prod_img6{
-  background-image: url("")
-}
-.prod_img7{
-  background-image: url("")
-}
-.prod_img8{
-  background-image: url("")
-}
-.prod_img9{
-  background-image: url("")
-}
-.prod_img10{
-  background-image: url("")
+
+.prod_carrousel .point:checked {
+  background-color: rgb(0, 0, 0);
+  border: 0.1em solid rgb(0, 0, 0);
 }
 
 
@@ -463,8 +480,13 @@ footer {
   color: black;
 }
 
+.prod_carrousel .arrows{
+  position: absolute;
+/* hay que centrar mejor las flechas!!!! */
+  top: 30%;
+}
 
-@keyframes desplazaDerecha {
+@keyframes Move-Right {
   from{
     transform: translateX(0%);
   }
@@ -474,7 +496,7 @@ footer {
   }
 }
 
-@keyframes desplazaIzquierda {
+@keyframes Move-Left {
   from{
     transform: translateX(-50%);
   }
