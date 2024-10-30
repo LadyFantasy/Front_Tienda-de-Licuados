@@ -38,9 +38,11 @@ const showSlide = index => {
     }, 500);
   }else{
     if(index==3){
-      product_carrousel.classList.replace("move_right","move_left");
+      product_carrousel.classList.remove("move_right");
+      product_carrousel.classList.add("move_left");
     }else{
-      product_carrousel.classList.replace("move_left","move_right")
+      product_carrousel.classList.remove("move_left");
+      product_carrousel.classList.add("move_right");
     }
   }
   points[index].checked = true;
@@ -72,4 +74,4 @@ product_arrow.addEventListener("click",()=>{
 
 // Mostrar la primera imagen al cargar la página
 showSlide(currentIndexHero);
-showSlide(currentIndexProduct+3);
+// showSlide(currentIndexProduct+3);
