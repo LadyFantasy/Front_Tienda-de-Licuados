@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
+:root {
+  font-size: 10px;
+  --main-text-color: #c7a17a;
+  --nav-footer-background: #111111;
+
+  --container-color: #FFE4F2;
+  --main-color: #0f27ff57;
+  --secondary-color: #de71ff71;
+  --shadow-color: #7A87FF57;
+}
+
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  scroll-behavior: smooth
+}
+
+.line {
+  background-color: black;
+  height: 4rem;
+}
+
+.scrolled {
+  background-color: black;
+  padding: .6rem 0;
+}
+
+.nav {
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0 auto;
+  text-wrap: nowrap;
+  /* width: 100vw; */
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  /* padding: .2rem 0; */
+  transition: background-color .2s ease-in-out;
+}
+
+.nav_logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+  padding: .5rem;
+  margin-left: 8%;
+}
+
+.logo_up {
+  font-weight: 400;
+  font-size: 2.2rem;
+  letter-spacing: .2rem;
+}
+
+.logo_down {
+  font-weight: 200;
+  font-size: 1.8rem;
+  letter-spacing: .1rem;
+}
+
+.nav_links_list {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 10%;
+  /* justify-self: center; */
+}
+
+.nav_links_list_links {
+  list-style-type: none;
+  padding: 0 1.2rem;
+  letter-spacing: .1rem;
+}
+
+.nav_links_list_links a {
+  font-size: 1.2rem;
+  transition: opacity .3s ease;
+}
+
+.nav_links_list_links a:hover {
+  opacity: .8;
+}
+
