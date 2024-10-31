@@ -109,6 +109,11 @@ footer {
   color: rgb(145, 145, 145);
 }
 
+.footer_form input:focus::placeholder{
+  font-size: 1.5rem;
+}
+
+
 .footer_h2 {
   color: var(--main-text-color);
   font-family: Oswald, Arial, Helvetica, sans-serif;
@@ -131,12 +136,13 @@ footer {
   line-height: 1.8rem;
   text-transform: uppercase;
   padding: 1.2rem 2rem;
-  transition: opacity .3s ease;
+  transition: all .3s ease;
 }
 
 .footer_btn:hover {
   opacity: 0.8;
 }
+
 
 .footer_form_wrapper {
   display: flex;

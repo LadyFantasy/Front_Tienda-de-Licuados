@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
+:root {
+  font-size: 10px;
+  --main-text-color: #c7a17a;
+  --nav-footer-background: #111111;
+
+  --container-color: #FFE4F2;
+  --main-color: #0f27ff57;
+  --secondary-color: #de71ff71;
+  --shadow-color: #7A87FF57;
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  color:white;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+.main{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  color: black;
+  font-family: Lato;
+  padding: 7rem 12rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+
+.section_form{
+  padding: 2rem 4rem 1rem;
+  width: 50%;
+  border-right: solid .1rem rgba(109, 109, 109, 0.253);
+}
+.section_form .contacto_form {
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+.section_form .contenedor_titulo{
+  display: flex;
+}
+.section_form .section_form_line {
+  margin: 1.9rem 1rem;
+  width: 70%;
+  height: .1rem;
+  background-color: rgba(109, 109, 109, 0.253);
+}
+.contacto_titulo{
+  font-family: Oswald;
+  color:#2D2A2A;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  min-width: fit-content;
+}
+.section_form .contacto_p{
+  color: #777777;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+.section_form .contacto_form .label {
+  color:#464646;
+  font-size: 1.4rem;
+  padding-bottom: 0.5rem;
+}
+.section_form .contacto_form .field {
+  padding: 1rem 1rem;
+  margin-bottom: 2rem;
+  
+  border: solid 2px rgba(109, 109, 109, 0.253);
+}
+.section_form .contacto_form textarea {
+  height: 19rem;
+}
+
+.contacto_btn {
+  background-color: var(--main-text-color);
+  color: white;
+  vertical-align: middle;
+  font-weight: 600;
+  border: solid 1px var(--main-text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+  padding: 1.2rem 2rem;
+  transition: all .3s ease;
+  width: fit-content;
+}
+
+.contacto_btn:hover {
+  background-color: #b99169;
+}
+
+.social {
+  padding: 2rem 4rem 1rem;
+  width: 50%;
+}
+.contacto_social_fab{
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5rem;
+
+}
+
+.social .fa-brands {
+  color:white;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  padding-top: .8rem;
+  border-radius: 50%;
+  background-color: #2D2A2A;
+  font-size: 3.2rem;
+
+  transition: background-color .3s ease;
+  margin-bottom: 6rem;
+}
+.social .fab{
+  font-size: 4.5rem;
+  color: #2D2A2A;
+}
