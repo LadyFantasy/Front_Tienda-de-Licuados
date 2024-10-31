@@ -18,10 +18,13 @@
     <div class="line"></div>
     <!----------------------------------- NAVBAR ------------------------------------->
     <nav class="nav">
-      <div class="nav_logo">
+      <a href="/index.html" class="nav_logo_link">
+        <!-- <div class="nav_logo"> -->
         <span class="logo_up">TIENDA</span>
         <span class="logo_down">DE LICUADOS</span>
-      </div>
+        <!--   </div> -->
+      </a>
+
       <ul class="nav_links_list">
         <li class="nav_links_list_links"><a href="">NUESTROS LICUADOS</a></li>
         <li class="nav_links_list_links"><a href="">TUTORIALES</a></li>
@@ -34,7 +37,7 @@
 
     <!----------------------------------- HERO -------------------------------------->
     <div class="hero">
-      <!-- Carrousel de fotos -->
+      <!------------- Carrousel de fotos -------------->
       <div class="hero_carrousel">
         <div class="hero_carrousel_img img1 slide active">
           <div class="hero_carrousel_img_text_wrapper move_up">
@@ -88,12 +91,14 @@
     </div>
 
     <main>
+      <!-- ----------------------------CARRUSEL PRODUCTOS----------------------------->
+
       <div class="carrousel_title">
         <p class="carrousel_title_text">NUESTROS PRODUCTOS</p>
         <div class="carrousel_title_line"></div>
       </div>
-      <!-- ----------------------------CARRUSEL PRODUCTOS----------------------------->
-      <div class="prod_carrousel">
+
+      <section class="prod_carrousel">
         <div class="prod_carrousel_wraper">
           <div class="slider_product">
             <div class="product_wrapper">
@@ -138,7 +143,7 @@
             </div>
           </div>
         </div>
-        <div class="arrows arrows_produts">
+        <div class="arrows arrows_products">
           <span class="prev">&#10094;</span>
           <span class="next">&#10095;</span>
         </div>
@@ -146,7 +151,27 @@
           <input type="radio" class="point" name="radio2" id="" />
           <input type="radio" class="point" name="radio2" id="" />
         </div>
-      </div>
+      </section>
+
+      <!---------------------------------- CARDS ------------------------------------->
+  
+      <section class="main_cards">
+        <div class="card">
+          <img src="../images/smoothie-3591749_1920.jpg" alt="Secretos del cocinero" class="card_img" />
+          <p class="title_up">Aprendé a hacer un licuado como los expertos</p>
+          <p class="title">Secretos del cocinero</p>
+          <button class="title_btn">VER</button>
+        </div>
+        <div class="card">
+          <img src="../images/smoothie-865632_1920.jpg" alt="Nuestros platos" class="card_img" />
+          <p class="title_up">Conocé todo lo que podés encontrar en nuestros locales</p>
+          <p class="title">Nuestros platos</p>
+          <button class="title_btn">VER</button>
+        </div>
+      </section>
+      
+<!---------------------------------- CARDS ------------------------------------->
+
     </main>
 
     <!---------------------------------- FOOTER ------------------------------------->
@@ -201,11 +226,10 @@
       </div>
 
       <div class="footer_end">
-        <span>© Copyright 2021 Tienda de café - Todos los derechos reservados. </span
-        ><span
-          >Todos los logos, productos, marcas y nombres aquí utilizados son propiedad
-          registrada.</span
-        >
+        <p>© Copyright 2021 Tienda de café - Todos los derechos reservados.</p>
+        <p>
+          Todos los logos, productos, marcas y nombres aquí utilizados son propiedad registrada.
+        </p>
       </div>
     </footer>
   </body>

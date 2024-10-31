@@ -9,7 +9,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-/* SLIDER HERO */
+/* SLIDER HERO Y PRODUCTOS*/
 const slides = document.querySelectorAll(".slide");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
@@ -17,7 +17,7 @@ const hero = document.querySelector(".hero");
 const points = document.querySelectorAll(".point");
 const hero_carrousel= document.querySelectorAll(".hero_carrousel_img_text_wrapper")
 const product_carrousel = document.querySelector(".slider_product")
-const product_arrow = document.querySelector(".arrows_produts")
+const product_arrow = document.querySelector(".arrows_products")
 
 let currentIndexHero = 0;
 let currentIndexProduct = 0;
