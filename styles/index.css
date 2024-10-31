@@ -256,7 +256,8 @@
 }
 
 /* -----CARROUSEL----- */
-.prod_carrousel {
+
+/* .prod_carrousel {
   width: 90%;
   margin: 0 auto;
   overflow-x: hidden;
@@ -292,17 +293,19 @@
   flex-direction: column;
 }
 
-.product_image {
+/* ----- IMÁGENES CARROUSEL ----- */
+/* .product_image {
   aspect-ratio: 1;
   background-size: cover;
-  transition: background-image .8s ease-in;
   overflow: hidden;
   margin: 0 1rem;
   background-position: center;
+  cursor: pointer;
+  transition: background-image .8s ease-in;
 }
 
 
-/* ----- IMÁGENES CARROUSEL ----- */
+
 
 .product_image1 {
   background-image: url(../images/drink-2355224_1920.jpg);
@@ -342,16 +345,175 @@
 
 .product_image10 {
   background-image: url(../images/drink-2355224_1920.jpg)
-}
+} */
 
 /* ----- IMÁGENES CARROUSEL HOVER ----- */
 
-.product_image1:hover {
+/* .product_image1:hover {
   background-image: url(../images/antioxidant-8266763_1920.jpg);
   background-position: center;
   background-size: 130%;
 }
+  */
 
+.prod_carrousel {
+  width: 90%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.prod_carrousel_wraper {
+  width: 90%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.slider_product {
+  width: 200%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row nowrap;
+  align-items: center;
+  overflow-x: hidden;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.product_wrapper {
+  width: 20%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ----- IMÁGENES CARROUSEL ----- */
+
+.product_image {
+  aspect-ratio: 1; 
+  background-size: cover;
+  overflow: hidden;
+  margin: 0 1rem;
+  background-position: center;
+  cursor: pointer;
+  position: relative; 
+  transition: all 1s ease; 
+}
+.product_image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0; 
+  transition: all 1s ease; 
+}
+
+.product_image:hover::after {
+  opacity: 1; 
+}
+
+/* ----- IMÁGENES CARROUSEL ----- */
+
+.product_image1 {
+  background-image: url(../images/drink-2355224_1920.jpg);
+}
+
+.product_image1::after {
+  background-image: url(../images/antioxidant-8266763_1920.jpg); 
+}
+
+.product_image2 {
+  background-image: url(../images/drink-2355224_1920.jpg);
+}
+
+.product_image2::after {
+  background-image: url(../images/antioxidant-8266763_1920.jpg);
+}
+
+.product_image3 {
+  background-image: url(../images/drink-2355224_1920.jpg);
+}
+
+.product_image3::after {
+  background-image: url(../images/antioxidant-8266763_1920.jpg);
+}
+
+.product_image4 {
+  background-image: url(../images/drink-2355224_1920.jpg);
+}
+
+.product_image4::after {
+  background-image: url(../images/antioxidant-8266763_1920.jpg);
+}
+
+.product_image5 {
+  background-image: url(../images/drink-2355224_1920.jpg);
+}
+
+.product_image5::after {
+  background-image: url(../images/antioxidant-8266763_1920.jpg);
+}
+
+.product_image6 {
+  background-image: url(../images/drink-2355224_1920.jpg);
+}
+
+.product_image6::after {
+  background-image: url(../images/antioxidant-8266763_1920.jpg);
+}
+
+
+.product_image7 {
+  background-image: url(../images/drink-2355224_1920.jpg);
+}
+
+.product_image7::after {
+  background-image: url(../images/antioxidant-8266763_1920.jpg);
+}
+
+
+.product_image8 {
+  background-image: url(../images/drink-2355224_1920.jpg);
+}
+
+.product_image8::after {
+  background-image: url(../images/antioxidant-8266763_1920.jpg);
+}
+
+
+.product_image9 {
+  background-image: url(../images/drink-2355224_1920.jpg);
+}
+
+.product_image9::after {
+  background-image: url(../images/antioxidant-8266763_1920.jpg);
+}
+
+
+.product_image10 {
+  background-image: url(../images/drink-2355224_1920.jpg);
+}
+
+.product_image10::after {
+  background-image: url(../images/antioxidant-8266763_1920.jpg);
+}
+
+.product_text {
+  text-align: center;
+  margin-top: .5rem;
+  color: black;
+  font-family: Oswald;
+  font-size: 1.4rem;
+}
 
 
 .product_text {
@@ -470,18 +632,20 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit:cover;
+  object-fit: cover;
   transition: transform .6s ease-in-out;
   z-index: -1;
 }
 
 .card:hover .card_img {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
-.title_up, .title, .title_btn {
+.title_up,
+.title,
+.title_btn {
   position: relative;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .main_cards .title_up {
@@ -522,31 +686,31 @@
 
 /* ----------------------------------------- BANNER TYPES ----------------------------------------- */
 
-.banner_types{
+.banner_types {
   margin-top: 3rem;
   /* width: 100vw; */
   height: 100vh;
   background-color: rgb(245, 245, 245);
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.banner_types_title_up{
+.banner_types_title_up {
   color: var(--main-text-color);
   font-family: Lato;
   font-size: 1.6rem;
   margin: 3rem 0 2rem 0;
 }
 
-.banner_types_content{
+.banner_types_content {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 4rem 4rem 0;
 }
 
-.banner_types_content .content_img{
+.banner_types_content .content_img {
   margin: 0 3rem;
   background-image: url(../images/smoothie-7942046_1920.jpg);
   background-position: center;
@@ -555,18 +719,20 @@ align-items: center;
   width: 40vw;
 }
 
-.content_text{
+.content_text {
   width: 18%;
 }
-.content_text_left{
+
+.content_text_left {
   text-align: right;
 }
 
-.content_text_right{
+.content_text_right {
   text-align: left;
 
 }
-.content_text .title{
+
+.content_text .title {
   color: var(--main-text-color);
   font-family: Oswald;
   font-size: 2rem;
@@ -576,7 +742,7 @@ align-items: center;
 }
 
 
-.content_text .text{
+.content_text .text {
   color: rgb(119, 119, 119);
   font-family: Lato;
   font-size: 1.4rem;
@@ -585,4 +751,60 @@ align-items: center;
   margin: 2rem 0 4rem;
   /* width: 20%; */
 
+}
+
+
+/* ----------------------------------------- BANNER LOCAL  ----------------------------------------- */
+
+.banner_local {
+  position: relative;
+  height: 78vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.banner_local::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/banner5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%) brightness(20%);
+  z-index: 0;
+}
+
+.banner_local_content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.banner_local_title_up {
+  font-family: Oswald;
+  font-size: 4.8rem;
+  font-weight: 200;
+  line-height: 5.2rem;
+}
+
+.banner_local_title {
+  color: var(--main-text-color);
+  font-family: Oswald;
+  font-size: 6.8rem;
+  font-weight: 600;
+  line-height: 7.2rem;
+}
+
+.banner_local_subtitle {
+  font-family: Lato;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+ margin: 1.5rem 0;
 }
