@@ -55,7 +55,6 @@
 
 .hero_carrousel_img_text_wrapper {
   max-width: 30%;
-  /*  padding-bottom: 10rem; */
   transition: transform .3s ease-in-out;
 }
 
@@ -521,76 +520,3 @@
   margin-top: 1.5rem;
 }
 
-
-/* .main_cards {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  gap: 3%;
-  margin-bottom: 2rem;
-}
-
-.card {
-  height: 38rem;
-  width: 100%;
-  background-size: 100%;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  cursor: pointer;
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  transition: background-size 1s ease-in-out;
-}
-
-.card:hover{
-  transform: scale(1.2);
-  width: 100%;
-}
-
-.card1 {
-  background-image: url(../images/smoothie-3591749_1920.jpg);
-}
-
-.card2 {
-  background-image: url(../images/smoothie-865632_1920.jpg);
-}
-
-.main_cards .title_up {
-  background-color: rgb(236, 236, 236);
-  color: rgb(51, 51, 51);
-  font-family: Lato;
-  font-size: 1.4rem;
-  font-weight: 600;
-  line-height: 1.6rem;
-  padding: .6rem 1rem;
-  width: fit-content;
-}
-
-.main_cards .title {
-  color: rgb(255, 255, 255);
-  font-family: Oswald, Arial, Helvetica, sans-serif;
-  font-size: 4.2rem;
-  font-weight: 600;
-  line-height: 4.6rem;
-  margin-top: .7rem;
-  text-transform: uppercase;
-}
-
-.main_cards .title_btn {
-  background-color: rgb(33, 33, 33);
-  color: rgb(255, 255, 255);
-  font-family: Lato;
-  font-weight: 600;
-  line-height: 1.6rem;
-  font-size: 1.2rem;
-  letter-spacing: .3rem;
-  padding: 1rem 1.4rem;
-  width: fit-content;
-  cursor: pointer;
-  border: none;
-  margin-top: 1.5rem;
-} */

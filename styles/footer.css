@@ -50,7 +50,7 @@ footer {
 
 .footer_logo .logo_down {
   font-size: 2.8rem;
-  line-height: 4.5rem;
+  line-height: 2.8rem;
 }
 
 .footer_ul {
@@ -61,15 +61,21 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding-left: 0px;
+  padding-left: 5rem;
 
 }
+
+.footer_links_list.left {
+  margin-left: 18rem;
+ }
 
 .footer_links_list_links {
   font-size: 1.4rem;
   list-style-type: none;
   padding: 9px 0;
 }
+
+
 
 .footer_links_list_links a {
   color: rgb(145, 145, 145);
@@ -93,20 +99,21 @@ footer {
 
 .footer_form input {
   background-color: transparent;
-  border: solid 1px var(--main-text-color);
-  width: 30rem;
+  border: solid 2px rgba(255, 255, 255, 0.233);
+  width: 35rem;
   outline: none;
   padding: 1rem;
 }
 
 .footer_form input::placeholder {
-  color: grey;
+  color: rgb(145, 145, 145);
 }
 
 .footer_h2 {
   color: var(--main-text-color);
   font-family: Oswald, Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  margin-bottom: .5rem;
 }
 
 .footer_form .footer_h2 {
@@ -119,8 +126,7 @@ footer {
   vertical-align: middle;
   font-weight: 600;
   border: solid 1px var(--main-text-color);
-  font-size: 1.1rem;
-  /*  letter-spacing: .1rem; */
+  font-size: 1.2rem;
   cursor: pointer;
   line-height: 1.8rem;
   text-transform: uppercase;
@@ -129,7 +135,7 @@ footer {
 }
 
 .footer_btn:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .footer_form_wrapper {
@@ -143,7 +149,7 @@ footer {
   text-align: center;
   padding: .7rem;
   border-radius: 50%;
-  background-color: grey;
+  background-color: rgb(100, 100, 100);
   font-size: 1.4rem;
   margin: 0.4rem;
   transition: background-color .3s ease;
@@ -161,18 +167,18 @@ footer {
 }
 
 .footer_end {
-  border-top: 1px solid;
-  border-color: rgba(73, 73, 73, 0.595);
+  border-top: 1px solid rgba(73, 73, 73, 0.459);
   padding: 2.5rem 0;
   color: rgb(187, 187, 187);
-  padding-left: 25rem;
+  padding-left: 20rem;
   display: flex;
   flex-direction: column;
 }
 
 .footer_end p {
+  color: rgba(255, 255, 255, 0.822);
   display: inline-block;
   width: 50rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.4rem;
 }
