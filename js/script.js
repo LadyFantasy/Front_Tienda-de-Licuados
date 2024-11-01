@@ -1,7 +1,7 @@
 // SCROLL DEL NAVBAR
 window.addEventListener("scroll", function () {
   var navbar = document.querySelector("nav");
-  if (window.scrollY > 20) {
+  if (window.scrollY > 111) {
     // Si el scroll es mayor a 150px
     navbar.classList.add("scrolled");
   } else {

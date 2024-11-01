@@ -26,41 +26,57 @@
   height: 4rem;
 }
 
-.scrolled {
-  background-color: black;
-  padding: .6rem 0;
-}
-
 .nav {
+  /* background-color: transparent; */
   font-family: Oswald, Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: space-around;
   text-align: center;
   margin: 0 auto;
   text-wrap: nowrap;
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 9999;
-  transition: background-color .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.scrolled {
+  background-color: black;
+  transition: all .3s ease-in-out;
+  position: sticky;
+}
+
+.scrolled .nav_logo_link{
+  line-height: 2rem;
+}
+
+.scrolled .logo_up {
+  font-size: 2.2rem;
+}
+
+.scrolled .logo_down {
+  font-size: 1.8rem;
+}
+.black_background{
+  background-color: black;
 }
 
 .nav_logo_link {
   display: flex;
   flex-direction: column;
-  line-height: 2rem;
+  line-height: 3rem;
   padding: .5rem;
   margin-left: 8%;
 }
 
 .logo_up {
   font-weight: 500;
-  font-size: 2.2rem;
+  font-size: 3.2rem;
   letter-spacing: .2rem;
 }
 
 .logo_down {
   font-weight: 200;
-  font-size: 1.8rem;
+  font-size: 2.6rem;
   letter-spacing: .1rem;
 }
 
