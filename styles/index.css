@@ -51,11 +51,11 @@
 }
 
 .img2 {
-  background-image: url(../images/verde.jpg);
+  background-image: url(../images/banner2.jpeg);
 }
 
 .img3 {
-  background-image: url(../images/naranja.jpg);
+  background-image: url(../images/banner3.jpeg);
 }
 
 .hero_carrousel_img_text_wrapper {
@@ -147,14 +147,22 @@
   }
 }
 
-
 .slide {
   display: none;
 }
 
 .deactivate {
-  /*  opacity: .5; */
   display: block;
+  animation: banner-animation .5s ;
+}
+
+@keyframes banner-animation{
+  from{
+    filter:brightness(100%);
+  }
+  to{
+    filter:brightness(10%);
+  }
 }
 
 .slide.active {
@@ -307,7 +315,7 @@
   background-position: center;
   cursor: pointer;
   position: relative;
-  transition: all 1s ease;
+
 }
 
 .product_image::after {
@@ -331,87 +339,89 @@
 /* ----- IMÁGENES CARROUSEL ----- */
 
 .product_image1 {
-  background-image: url(../images/drink-2355224_1920.jpg);
+
+  background-image: url(../images/1.jpg);
 }
 
 .product_image1::after {
+  
   background-image: url(../images//desc-hover.jpg);
 }
 
 .product_image2 {
-  background-image: url(../images/drink-2355224_1920.jpg);
+  background-image: url(../images/2.jpeg);
 }
 
 .product_image2::after {
-  background-image: url(../images/antioxidant-8266763_1920.jpg);
+  background-image: url(../images//desc-hover.jpg);
 }
 
 .product_image3 {
-  background-image: url(../images/drink-2355224_1920.jpg);
+  background-image: url(../images/3.jpeg);
 }
 
 .product_image3::after {
-  background-image: url(../images/antioxidant-8266763_1920.jpg);
+  background-image: url(../images//desc-hover.jpg);
 }
 
 .product_image4 {
-  background-image: url(../images/drink-2355224_1920.jpg);
+  background-image: url(../images/4.jpeg);
 }
 
 .product_image4::after {
-  background-image: url(../images/antioxidant-8266763_1920.jpg);
+  background-image: url(../images//desc-hover.jpg);
 }
 
 .product_image5 {
-  background-image: url(../images/drink-2355224_1920.jpg);
+  background-image: url(../images/5.jpeg);
 }
 
 .product_image5::after {
-  background-image: url(../images/antioxidant-8266763_1920.jpg);
+  background-image: url(../images//desc-hover.jpg);
 }
 
 .product_image6 {
-  background-image: url(../images/drink-2355224_1920.jpg);
+  background-image: url(../images/6.jpg);
 }
 
 .product_image6::after {
-  background-image: url(../images/antioxidant-8266763_1920.jpg);
+  background-image: url(../images//desc-hover.jpg);
 }
 
 
 .product_image7 {
-  background-image: url(../images/drink-2355224_1920.jpg);
+  background-image: url(../images/7.jpeg);
 }
 
 .product_image7::after {
-  background-image: url(../images/antioxidant-8266763_1920.jpg);
+  background-image: url(../images//desc-hover.jpg);
 }
 
 
 .product_image8 {
-  background-image: url(../images/drink-2355224_1920.jpg);
+  background-image: url(../images/8.jpeg);
 }
 
 .product_image8::after {
-  background-image: url(../images/antioxidant-8266763_1920.jpg);
+  background-image: url(../images//desc-hover.jpg);
 }
 
 
 .product_image9 {
-  background-image: url(../images/drink-2355224_1920.jpg);
+  background-image: url(../images/2.jpeg);
 }
 
 .product_image9::after {
-  background-image: url(../images/antioxidant-8266763_1920.jpg);
+  background-image: url(../images//desc-hover.jpg);
 }
 
 
 .product_image10 {
-  background-image: url(../images/drink-2355224_1920.jpg);
+  background-image: url(../images/4.jpeg);
 }
 
 .product_image10::after {
-  background-image: url(../images/antioxidant-8266763_1920.jpg);
+  background-image: url(../images//desc-hover.jpg);
 }
 
 .product_text {
