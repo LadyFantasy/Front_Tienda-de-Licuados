@@ -472,7 +472,7 @@
 
 .arrows_products .prev,
 .arrows_products .next {
-  transition: color .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 
