@@ -20,6 +20,7 @@ const product_arrow = document.querySelector(".arrows_products");
 
 let currentIndexHero = 0;
 let currentIndexProduct = 0;
+points[3].checked = true;
 
 const showSlide = index => {
   if (index < 3) {
