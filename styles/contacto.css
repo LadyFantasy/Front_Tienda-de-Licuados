@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
 
+@import url(./footer.css);
+@import url(./nav.css);
+
 :root {
   font-size: 10px;
   --main-text-color: #c7a17a;
@@ -15,12 +18,12 @@
   padding: 0;
   box-sizing: border-box;
   margin: 0;
-  color:white;
+  color: white;
   text-decoration: none;
   scroll-behavior: smooth;
 }
 
-.main{
+.main {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -32,48 +35,56 @@
 }
 
 
-.section_form{
+.section_form {
   padding: 2rem 4rem 1rem;
   width: 50%;
   border-right: solid .1rem rgba(109, 109, 109, 0.253);
 }
+
 .section_form .contacto_form {
   color: black;
   display: flex;
   flex-direction: column;
 }
-.section_form .contenedor_titulo{
+
+.section_form .contenedor_titulo {
   display: flex;
 }
+
 .section_form .section_form_line {
   margin: 1.9rem 1rem;
   width: 70%;
   height: .1rem;
   background-color: rgba(109, 109, 109, 0.253);
 }
-.contacto_titulo{
+
+.contacto_titulo {
   font-family: Oswald;
-  color:#2D2A2A;
+  color: #2D2A2A;
   font-size: 2.4rem;
   margin-bottom: 2rem;
   min-width: fit-content;
 }
-.section_form .contacto_p{
+
+.section_form .contacto_p {
   color: #777777;
   font-size: 1.4rem;
   margin-bottom: 2rem;
 }
+
 .section_form .contacto_form .label {
-  color:#464646;
+  color: #464646;
   font-size: 1.4rem;
   padding-bottom: 0.5rem;
 }
+
 .section_form .contacto_form .field {
   padding: 1rem 1rem;
   margin-bottom: 2rem;
-  
+  color: black;
   border: solid 2px rgba(109, 109, 109, 0.253);
 }
+
 .section_form .contacto_form textarea {
   height: 19rem;
 }
@@ -101,7 +112,8 @@
   padding: 2rem 4rem 1rem;
   width: 50%;
 }
-.contacto_social_fab{
+
+.contacto_social_fab {
   display: flex;
   flex-direction: column;
   padding-left: 1.5rem;
@@ -109,7 +121,7 @@
 }
 
 .social .fa-brands {
-  color:white;
+  color: white;
   width: 4rem;
   height: 4rem;
   text-align: center;
@@ -121,7 +133,8 @@
   transition: background-color .3s ease;
   margin-bottom: 6rem;
 }
-.social .fab{
+
+.social .fab {
   font-size: 4.5rem;
   color: #2D2A2A;
 }

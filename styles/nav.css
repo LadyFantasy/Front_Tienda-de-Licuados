@@ -39,13 +39,33 @@
   z-index: 9999;
   transition: all .3s ease-in-out;
 }
+
 .scrolled {
   background-color: black;
   transition: all .3s ease-in-out;
   position: sticky;
+  animation-name: Move_Down;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
-.scrolled .nav_logo_link{
+@keyframes Move_Down {
+  0% {
+    transform: translateY(-5rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    position: sticky;
+    opacity: 1;
+  }
+
+}
+
+
+.scrolled .nav_logo_link {
   line-height: 2rem;
 }
 
@@ -56,7 +76,8 @@
 .scrolled .logo_down {
   font-size: 1.8rem;
 }
-.black_background{
+
+.black_background {
   background-color: black;
 }
 
@@ -102,4 +123,3 @@
 .nav_links_list_links a:hover {
   opacity: .8;
 }
-
