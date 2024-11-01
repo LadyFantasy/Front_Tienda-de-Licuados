@@ -20,9 +20,9 @@ const product_arrow = document.querySelector(".arrows_products");
 
 let currentIndexHero = 0;
 let currentIndexProduct = 0;
-points[3].checked = true;
 
 const showSlide = index => {
+  points[currentIndexProduct+3].checked = true;
   if (index < 3) {
     slides[currentIndexHero].classList.remove("active");
     slides[currentIndexHero].classList.add("deactivate");
@@ -33,7 +33,7 @@ const showSlide = index => {
       slides[index].classList.add("active");
       hero_carrousel[index].classList.remove("move_down");
       hero_carrousel[index].classList.add("move_up");
-
+      
       currentIndexHero = index;
     }, 500);
   } else {
@@ -48,6 +48,7 @@ const showSlide = index => {
   points[index].checked = true;
 };
 
+if(document.title.includes("Home")){
 next.addEventListener("click", () => {
   const nextIndex = (currentIndexHero + 1) % slides.length;
   showSlide(nextIndex);
@@ -68,5 +69,5 @@ product_arrow.addEventListener("click", () => {
   currentIndexProduct = (currentIndexProduct - 1) * -1;
   showSlide(currentIndexProduct + 3);
 });
-
 showSlide(currentIndexHero);
+};
