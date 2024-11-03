@@ -1,0 +1,46 @@
+
+.menu_hero{
+  background-image: url(../images/ATDW-Australian-Arid-Lands-Botanic-Garden-Bluebush-Cafe-3.jpeg);
+  position: relative;
+  margin-top: -7rem;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 78vh;
+  background-position:center;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  padding-left: 12%;
+}
+
+.menu_text_hero_wraper{
+  max-width: 30%;
+  
+}
+
+.menu_hero_text1{
+  font-family: Oswald;
+  font-size: 4.8rem;
+  font-weight: 200;
+  line-height: 5.2rem;
+
+}
+
+.menu_hero_text2{
+  font-family: Oswald;
+  font-size: 6.8rem;
+  font-weight: 600;
+  line-height: 7.2rem;
+  margin: 1rem 0;
+}
+
+.menu_hero_text3{
+  font-family: Lato;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: rgba(255, 255, 255, 0.8);
+
+}
+
