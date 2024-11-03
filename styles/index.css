@@ -5,6 +5,7 @@
 @import url(./contacto.css);
 @import url(./tutoriales.css);
 @import url(./nuestro-menu.css);
+@import url(./trabaja-con-nosotros.css);
 
 :root {
   font-size: 10px;
@@ -243,9 +244,9 @@
 }
 
 
-/* ------------------------------------------------- MAIN ------------------------------------------------- */
+/* -------------------------------------------- MAIN -------------------------------------------- */
 
-/* ----------------------------------------- CARROUSEL PRODUCTOS ----------------------------------------- */
+/* -------------------------------- CARROUSEL PRODUCTOS --------------------------------- */
 
 /* -----TÍTULO----- */
 .carrousel_title {
@@ -339,7 +340,6 @@
   opacity: 1;
 }
 
-/* ----- IMÁGENES CARROUSEL ----- */
 
 .product_image1 {
 
