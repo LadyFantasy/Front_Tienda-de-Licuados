@@ -17,6 +17,7 @@
   --main-color: #0f27ff57;
   --secondary-color: #de71ff71;
   --shadow-color: #7A87FF57;
+  --desplazamiento_texto: -80%;
 }
 
 
@@ -133,7 +134,7 @@
   }
 
   to {
-    transform: translateY(-80%);
+    transform: translateY(var(--desplazamiento_texto));
     opacity: 1;
 
   }
@@ -141,7 +142,7 @@
 
 @keyframes Move-Down {
   from {
-    transform: translateY(-80%);
+    transform: translateY(var(--desplazamiento_texto));
     opacity: 1;
   }
 
@@ -722,3 +723,13 @@
   line-height: 2.2rem;
   margin: 1.5rem 0;
 }
+
+
+
+
+@media( max-width :1600px) {
+  :root {
+    --desplazamiento_texto: -30%;
+  }
+}
+
