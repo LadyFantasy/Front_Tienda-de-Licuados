@@ -6,6 +6,7 @@
 @import url(./tutoriales.css);
 @import url(./nuestro-menu.css);
 @import url(./trabaja-con-nosotros.css);
+@import url(./tienda.css);
 
 :root {
   font-size: 10px;
@@ -28,7 +29,7 @@
   scroll-behavior: smooth
 }
 
-/* ------------------------------------------------- HERO ------------------------------------------------- */
+/* ----------------------------------------- HERO -------------------------------------------- */
 
 .hero {
   position: relative;
@@ -342,12 +343,10 @@
 
 
 .product_image1 {
-
   background-image: url(../images/1.jpg);
 }
 
 .product_image1::after {
-  
   background-image: url(../images//desc-hover.jpg);
 }
 
@@ -391,7 +390,6 @@
   background-image: url(../images//desc-hover.jpg);
 }
 
-
 .product_image7 {
   background-image: url(../images/7.jpeg);
 }
@@ -399,7 +397,6 @@
 .product_image7::after {
   background-image: url(../images//desc-hover.jpg);
 }
-
 
 .product_image8 {
   background-image: url(../images/8.jpeg);
@@ -409,7 +406,6 @@
   background-image: url(../images//desc-hover.jpg);
 }
 
-
 .product_image9 {
   background-image: url(../images/2.jpeg);
 }
@@ -417,7 +413,6 @@
 .product_image9::after {
   background-image: url(../images//desc-hover.jpg);
 }
-
 
 .product_image10 {
   background-image: url(../images/4.jpeg);

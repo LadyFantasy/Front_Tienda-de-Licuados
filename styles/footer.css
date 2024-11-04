@@ -76,7 +76,7 @@ footer {
 .footer_form input {
   background-color: transparent;
   border: solid 2px rgba(255, 255, 255, 0.233);
-  width: 35rem;
+  width: 20vw;
   outline: none;
   padding: 1rem;
 }

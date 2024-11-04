@@ -1,0 +1,15 @@
+.tienda_productos{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 2vw 8vw;
+  gap: .8vw;
+}
+
+.tienda_productos .product_wrapper{
+  display: inline-block;
+  width: 100%;
+}
+
+.tienda_productos .product_wrapper .product_text{
+  margin-block: 1rem;
+}
