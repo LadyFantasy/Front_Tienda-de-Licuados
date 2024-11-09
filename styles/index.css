@@ -753,10 +753,10 @@
   }
   .broma h1{
     background-color: #111111;
-    width: 100vw;
+    width: 95vw;
     font-size: 3rem;
     position: relative;
-    z-index: 1000000000000000000000;
+    z-index: 1;
     margin: .5rem;
   }
 }
