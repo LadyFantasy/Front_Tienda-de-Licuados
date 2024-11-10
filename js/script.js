@@ -95,3 +95,15 @@ menu.addEventListener("click", () => {
 });
 
 
+
+var audio = document.getElementById("myAudio");
+audio.volume = 0.1;
+
+window.addEventListener("resize",()=> {
+  if (innerWidth>375) {
+  audio.pause();
+}
+else{
+  audio.play();
+}
+});
