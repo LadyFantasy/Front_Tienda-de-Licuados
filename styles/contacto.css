@@ -27,12 +27,7 @@
   display: flex;
 }
 
-.section_form .section_form_line {
-  margin: 1.9rem 1rem;
-  width: 70%;
-  height: .1rem;
-  background-color: rgba(109, 109, 109, 0.253);
-}
+
 
 .contacto_titulo {
   font-family: Oswald;
@@ -87,6 +82,7 @@
 .social {
   padding: 2rem 4rem 1rem;
   width: 50%;
+  
 }
 
 .contacto_social_fab {
@@ -113,4 +109,36 @@
 .social .fab {
   font-size: 4.5rem;
   color: #2D2A2A;
+}
+
+.icon {
+  width: 6rem;
+}
+.section_form_line {
+  margin: 1.9rem 1rem;
+  width: 70%;
+  height: .1rem;
+  background-color: rgba(109, 109, 109, 0.253);
+}
+
+@media( max-width :1080px) {
+
+  .main {
+    flex-direction: column;
+    padding-inline: 0%;
+  }
+
+  .section_form {
+    width: 100%;
+    border-right: none;
+    margin-bottom: 5rem;
+  }
+
+  .social{
+    width: 100%;
+  }
+.contacto_social_fab{
+  flex-direction: row;
+}
+
 }

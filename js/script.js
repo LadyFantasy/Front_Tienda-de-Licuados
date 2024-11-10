@@ -17,6 +17,9 @@ const points = document.querySelectorAll(".point");
 const hero_carrousel = document.querySelectorAll(".hero_carrousel_img_text_wrapper");
 const product_carrousel = document.querySelector(".slider_product");
 const product_arrow = document.querySelector(".arrows_products");
+const menu = document.querySelector(".fa-bars")
+const navLinks = document.querySelector(".nav_links_list");
+
 
 let currentIndexHero = 0;
 let currentIndexProduct = 0;
@@ -48,11 +51,23 @@ const showSlide = index => {
   points[index].checked = true;
 };
 
+document.addEventListener("click", () => {
+
+  if (!navLinks.contains(event.target) && !menu.contains(event.target)) {
+    navLinks.classList.add("oculto");
+    event.stopPropagation();
+  }  
+});
+
 if(document.title.includes("Home")){
 next.addEventListener("click", () => {
   const nextIndex = (currentIndexHero + 1) % slides.length;
   showSlide(nextIndex);
 });
+
+
+
+
 
 prev.addEventListener("click", () => {
   const prevIndex = (currentIndexHero - 1 + slides.length) % slides.length;
@@ -71,3 +86,12 @@ product_arrow.addEventListener("click", () => {
 });
 showSlide(currentIndexHero);
 };
+
+
+
+menu.addEventListener("click", () => {
+  navLinks.classList.toggle("oculto");
+  
+});
+
+
