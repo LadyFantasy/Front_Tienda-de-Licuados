@@ -109,3 +109,15 @@ padding: .7rem;
 .contacto_btn:hover {
   background-color: #b99169;
 }
+
+
+@media( max-width :1080px) {
+
+  .form_flex .flex_columns {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    width: 100%;
+  }
+}

@@ -13,3 +13,17 @@
 .tienda_productos .product_wrapper .product_text{
   margin-block: 1rem;
 }
+
+
+@media( max-width :768px) {
+
+  .tienda_productos{
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    align-items: center;
+  }
+  .tienda_productos .product_wrapper{
+    width: 80%;
+  }
+}

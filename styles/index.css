@@ -724,6 +724,10 @@
   margin: 1.5rem 0;
 }
 
+.broma{
+  display: none;
+}
+
 
 
 
@@ -733,3 +737,26 @@
   }
 }
 
+@media(max-width:  375px) {
+  .real{
+    display: none;
+  }
+  .broma{
+    display: block;
+    width: 220vw;
+    height: 190vh;
+  }
+  .broma iframe{
+    position: absolute;
+    top:-40rem;
+    left:-31rem;
+  }
+  .broma h1{
+    background-color: #111111;
+    width: 95vw;
+    font-size: 3rem;
+    position: relative;
+    z-index: 1;
+    margin: .5rem;
+  }
+}
