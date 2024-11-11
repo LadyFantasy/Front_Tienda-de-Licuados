@@ -1,13 +1,14 @@
-.trabaja_main{
+.trabaja_main {
   padding: 5rem 10rem;
 }
 
-.form_text_wraper{
+.form_text_wraper {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .form_title_up {
   color: var(--main-text-color);
   font-family: Lato;
@@ -28,11 +29,11 @@
   width: 12rem;
   height: .2rem;
   background-color: var(--main-text-color);
-  
+
 }
 
-.form_text{
-  color:rgb(119, 119, 119);
+.form_text {
+  color: rgb(119, 119, 119);
   font-family: Lato;
   font-size: 1.4rem;
   line-height: 2.4rem;
@@ -63,7 +64,7 @@
 .form_flex .flex_column {
   display: flex;
   flex-direction: column;
-  flex: 1; 
+  flex: 1;
 }
 
 .flex_column .label {
@@ -74,17 +75,17 @@
 }
 
 .flex_column .field.cv {
-padding: .7rem;
+  padding: .7rem;
 }
 
 .flex_column .field,
 .trabaja_form textarea {
-  width: 100%; 
+  width: 100%;
   padding: 1rem 1rem;
   margin-bottom: 2rem;
   color: black;
   border: solid 2px rgba(0, 0, 0, 0.11);
-  
+
 }
 
 .trabaja_form textarea {
@@ -107,11 +108,12 @@ padding: .7rem;
 }
 
 .contacto_btn:hover {
-  background-color: #b99169;
+  background-color: #568676;
+  ;
 }
 
 
-@media( max-width :1080px) {
+@media(max-width :1080px) {
 
   .form_flex .flex_columns {
     position: relative;

@@ -1,4 +1,3 @@
-
 footer {
   background-color: var(--nav-footer-background);
   font-family: "Lato", Arial, Helvetica, sans-serif;
@@ -167,7 +166,7 @@ footer {
 }
 
 
-@media( max-width :1080px) {
+@media(max-width :1080px) {
 
   .footer {
     display: grid;
@@ -175,28 +174,33 @@ footer {
     height: fit-content;
     padding: 7% 0;
   }
+
   .footer_contact {
     grid-column: 1/4;
-   
+
   }
-  .footer_form{
+
+  .footer_form {
     width: 70%;
   }
-  .footer_form_wrapper{
+
+  .footer_form_wrapper {
 
     flex-direction: column;
   }
+
   .footer_form_wrapper .field {
     width: 100%;
     margin-bottom: 5%;
-    
+
   }
 
   .footer_links_list {
     padding-left: 0%;
     margin-bottom: 15%;
   }
-  .footer_end{
+
+  .footer_end {
     padding-inline: 0;
   }
 }

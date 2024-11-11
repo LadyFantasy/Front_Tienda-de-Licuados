@@ -27,8 +27,6 @@
   display: flex;
 }
 
-
-
 .contacto_titulo {
   font-family: Oswald;
   color: #2D2A2A;
@@ -48,7 +46,6 @@
   font-size: 1.4rem;
   padding-bottom: 0.5rem;
 }
-
 .section_form .contacto_form .field {
   padding: 1rem 1rem;
   margin-bottom: 2rem;
@@ -81,8 +78,7 @@
 
 .social {
   padding: 2rem 4rem 1rem;
-  width: 50%;
-  
+  width: 50%; 
 }
 
 .contacto_social_fab {
